@@ -304,7 +304,12 @@ textarea.input { resize: vertical; font-family: inherit; }
   border-bottom: 1px solid var(--color-divider);
 }
 .solution-row:last-child { border-bottom: none; }
-.solution-row .solution-visual { display: flex; align-items: center; justify-content: center; }
+.solution-row .solution-visual {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 260px; width: 100%; box-sizing: border-box;
+  background: var(--color-surface); border-radius: var(--radius-md);
+  padding: 24px;
+}
 .solution-row.reverse .solution-visual { order: 2; }
 
 /* — illustrated device/screen mockups (no photography, nothing brand-specific) — */
@@ -357,6 +362,66 @@ textarea.input { resize: vertical; font-family: inherit; }
   stroke-linejoin: round;
   color: var(--color-accent);
 }
+
+/* — modern app screen (apartment hero) — */
+.app-screen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #33456200 0%, #2a3a52 0%, #1c2740 48%, #12172a 100%);
+  padding: 30px 28px 26px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 26px;
+  color: #fff;
+}
+.app-screen::before {
+  content: "";
+  position: absolute;
+  top: -60px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.16), rgba(255,255,255,0) 70%);
+  pointer-events: none;
+}
+.app-top { display: flex; align-items: flex-start; justify-content: space-between; position: relative; z-index: 1; }
+.app-greeting .hi { font-size: 12.5px; color: rgba(255,255,255,0.6); }
+.app-greeting .unit { font-family: var(--font-heading); font-size: 23px; font-weight: 600; margin-top: 2px; }
+.app-weather { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: rgba(255,255,255,0.75); }
+.app-weather svg { width: 16px; height: 16px; stroke: #fff; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.app-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; position: relative; z-index: 1; }
+.app-tile {
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  padding: 14px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.app-tile svg { width: 22px; height: 22px; stroke: #fff; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.app-tile .val { font-size: 15px; font-weight: 700; }
+.app-tile .lbl { font-size: 10px; color: rgba(255,255,255,0.65); }
+.app-actions { display: flex; gap: 10px; position: relative; z-index: 1; }
+.app-action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.app-action svg { width: 16px; height: 16px; stroke: #fff; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
 .bezel {
   display: inline-flex;

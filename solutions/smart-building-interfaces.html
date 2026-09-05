@@ -5,24 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smart Building Interfaces — Cryptec Solutions</title>
 <meta name="description" content="Bespoke touch panels and interactive displays for intercom, climate, metering, booking and guest services.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-
-<svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden;">
-  <defs>
-    <symbol id="i-climate" viewBox="0 0 24 24"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.5" y1="7.5" x2="19.5" y2="16.5"/><line x1="19.5" y1="7.5" x2="4.5" y2="16.5"/></symbol>
-    <symbol id="i-power" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
-    <symbol id="i-water" viewBox="0 0 24 24"><path d="M12 3c-3.5 4.5-6 8-6 11a6 6 0 0012 0c0-3-2.5-6.5-6-11z"/></symbol>
-    <symbol id="i-concierge" viewBox="0 0 24 24"><path d="M6 16v-4a6 6 0 1112 0v4l1.5 2h-15z"/><path d="M10 20a2 2 0 004 0"/></symbol>
-    <symbol id="i-news" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="1.5"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></symbol>
-    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.8.6-1.5 1.1-1.5 2.2"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><path d="M12 12c0-3 1.5-5 4-5s3 2 1 4-4 1-5 1z"/><path d="M12 12c-3 0-5-1.5-5-4s2-3 4-1 1 4 1 5z"/><path d="M12 12c0 3-1.5 5-4 5s-3-2-1-4 4-1 5-1z"/></symbol>
-    <symbol id="i-dnd" viewBox="0 0 24 24"><path d="M15 4a8 8 0 100 16 8 8 0 01-8-8 8 8 0 018-8z"/></symbol>
-    <symbol id="i-housekeeping" viewBox="0 0 24 24"><path d="M4 18v-7a2 2 0 012-2h4a2 2 0 012 2v1h4a2 2 0 012 2v4"/><path d="M4 18h16"/><circle cx="7" cy="10.5" r="1.2"/></symbol>
-    <symbol id="i-intercom" viewBox="0 0 24 24"><path d="M6 4h3l1.5 4-2 1.5a12 12 0 006 6l1.5-2 4 1.5v3a2 2 0 01-2 2A16 16 0 014 6a2 2 0 012-2z"/></symbol>
-  </defs>
-</svg>
 
 <div class="wrap">
   <header class="site-header">
@@ -60,34 +48,29 @@
     <p>A wall panel written for the systems already installed and completely modifiable to your spec: your systems, your branding, your wording. Two panel sizes cover almost every position in a building.</p>
   </header>
 
-  <section class="grid grid-2">
-    <figure class="figure">
-      <div class="mockup" aria-hidden="true">
-        <div class="mockup-bar"><span>Residential unit</span><span>9:41</span></div>
-        <div class="mockup-screen">
-          <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
-          <div class="mockup-tile"><svg><use href="#i-power"></use></svg>Power</div>
-          <div class="mockup-tile"><svg><use href="#i-water"></use></svg>Water</div>
-          <div class="mockup-tile"><svg><use href="#i-concierge"></use></svg>Concierge</div>
-          <div class="mockup-tile"><svg><use href="#i-news"></use></svg>News</div>
-          <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
+  <section style="display: flex; justify-content: center;">
+    <figure class="figure" style="width: 100%; max-width: 480px;">
+      <div class="app-screen" aria-hidden="true">
+        <div class="app-top">
+          <div class="app-greeting">
+            <div class="hi">Good evening</div>
+            <div class="unit">Unit 12B</div>
+          </div>
+          <div class="app-weather"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 01-1-7.9A5 5 0 0115.9 8 4.5 4.5 0 0117 17H7z"/></svg>19&deg; &middot; Light rain</div>
+        </div>
+        <div class="app-tiles">
+          <div class="app-tile"><svg viewBox="0 0 24 24"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.5" y1="7.5" x2="19.5" y2="16.5"/><line x1="19.5" y1="7.5" x2="4.5" y2="16.5"/></svg><span class="val">21&deg;</span><span class="lbl">Climate</span></div>
+          <div class="app-tile"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg><span class="val">14.6 kWh</span><span class="lbl">Power</span></div>
+          <div class="app-tile"><svg viewBox="0 0 24 24"><path d="M12 3c-3.5 4.5-6 8-6 11a6 6 0 0012 0c0-3-2.5-6.5-6-11z"/></svg><span class="val">148 L</span><span class="lbl">Water</span></div>
+          <div class="app-tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><line x1="12" y1="5" x2="12" y2="12"/></svg><span class="val">On</span><span class="lbl">Master</span></div>
+        </div>
+        <div class="app-actions">
+          <div class="app-action"><svg viewBox="0 0 24 24"><path d="M6 16v-4a6 6 0 1112 0v4l1.5 2h-15z"/></svg>Concierge</div>
+          <div class="app-action"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="1.5"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/></svg>News</div>
+          <div class="app-action"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.8.6-1.5 1.1-1.5 2.2"/></svg>Help</div>
         </div>
       </div>
       <figcaption>Apartment · home screen (illustrative)</figcaption>
-    </figure>
-    <figure class="figure">
-      <div class="mockup" aria-hidden="true">
-        <div class="mockup-bar"><span>Guest room</span><span>9:41</span></div>
-        <div class="mockup-screen">
-          <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
-          <div class="mockup-tile"><svg><use href="#i-fan"></use></svg>Fan speed</div>
-          <div class="mockup-tile"><svg><use href="#i-dnd"></use></svg>Do not disturb</div>
-          <div class="mockup-tile"><svg><use href="#i-housekeeping"></use></svg>Housekeeping</div>
-          <div class="mockup-tile"><svg><use href="#i-concierge"></use></svg>Concierge</div>
-          <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
-        </div>
-      </div>
-      <figcaption>Hotel · guest room screen (illustrative)</figcaption>
     </figure>
   </section>
 
