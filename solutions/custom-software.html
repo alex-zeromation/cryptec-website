@@ -72,27 +72,47 @@
   </section>
 
   <section>
-    <h2 style="font-size: clamp(26px, 3.4vw, 36px); max-width: 30ch; margin-bottom: 18px;">How an engagement runs.</h2>
-    <div class="grid grid-4">
-      <div>
-        <div class="accent-bar"></div>
-        <h3 style="font-size: 20px; margin: 6px 0 8px;">Scope</h3>
-        <p class="text-muted" style="font-size: 15px;">We read the points list, the drawings and whatever documentation the incumbent systems have, then write down exactly what the software will do.</p>
+    <h2 style="font-size: clamp(26px, 3.4vw, 36px); max-width: 30ch; margin-bottom: 22px;">How an engagement runs.</h2>
+    <div class="flow" data-flow>
+      <div class="flow-tabs">
+        <button class="flow-tab active" type="button">
+          <span class="flow-tab-top"><span class="flow-num">01</span><span class="flow-title">Scope</span></span>
+          <span class="flow-bar"><span class="flow-bar-fill"></span></span>
+        </button>
+        <button class="flow-tab" type="button">
+          <span class="flow-tab-top"><span class="flow-num">02</span><span class="flow-title">Build</span></span>
+          <span class="flow-bar"><span class="flow-bar-fill"></span></span>
+        </button>
+        <button class="flow-tab" type="button">
+          <span class="flow-tab-top"><span class="flow-num">03</span><span class="flow-title">Commission</span></span>
+          <span class="flow-bar"><span class="flow-bar-fill"></span></span>
+        </button>
+        <button class="flow-tab" type="button">
+          <span class="flow-tab-top"><span class="flow-num">04</span><span class="flow-title">Support</span></span>
+          <span class="flow-bar"><span class="flow-bar-fill"></span></span>
+        </button>
       </div>
-      <div>
-        <div class="accent-bar"></div>
-        <h3 style="font-size: 20px; margin: 6px 0 8px;">Build</h3>
-        <p class="text-muted" style="font-size: 15px;">Development against real hardware on the bench, reviewed with you as it lands rather than at the end.</p>
-      </div>
-      <div>
-        <div class="accent-bar"></div>
-        <h3 style="font-size: 20px; margin: 6px 0 8px;">Commission</h3>
-        <p class="text-muted" style="font-size: 15px;">On site, point by point, until every integration reads and writes what it should. Handover comes documented.</p>
-      </div>
-      <div>
-        <div class="accent-bar"></div>
-        <h3 style="font-size: 20px; margin: 6px 0 8px;">Support</h3>
-        <p class="text-muted" style="font-size: 15px;">Updates and changes across the life of the fleet. The software is yours; we stay on for as long as it's useful that we do.</p>
+      <div class="flow-panel">
+        <div class="flow-slide active">
+          <div class="flow-slide-num">01</div>
+          <h3>Scope</h3>
+          <p>We read the points list, the drawings and whatever documentation the incumbent systems have, then write down exactly what the software will do.</p>
+        </div>
+        <div class="flow-slide">
+          <div class="flow-slide-num">02</div>
+          <h3>Build</h3>
+          <p>Development against real hardware on the bench, reviewed with you as it lands rather than at the end.</p>
+        </div>
+        <div class="flow-slide">
+          <div class="flow-slide-num">03</div>
+          <h3>Commission</h3>
+          <p>On site, point by point, until every integration reads and writes what it should. Handover comes documented.</p>
+        </div>
+        <div class="flow-slide">
+          <div class="flow-slide-num">04</div>
+          <h3>Support</h3>
+          <p>Updates and changes across the life of the fleet. The software is yours; we stay on for as long as it's useful that we do.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -115,5 +135,6 @@
   </footer>
 </div>
 
+<script src="../assets/js/flow.js"></script>
 </body>
 </html>
