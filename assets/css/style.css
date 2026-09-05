@@ -268,6 +268,45 @@ section { padding-bottom: clamp(44px, 7vw, 84px); }
 .input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
 textarea.input { resize: vertical; font-family: inherit; }
 
+/* — dropdown "view all" entry — */
+.dropdown-menu .view-all {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--color-divider);
+  margin-bottom: 4px;
+  border-radius: var(--radius-sm);
+}
+.dropdown-menu .view-all:hover { background: var(--color-accent-100); color: var(--color-accent-800); }
+
+/* — capability tags — */
+.tag-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-divider);
+  color: var(--color-neutral-700);
+  background: var(--color-surface);
+}
+
+/* — alternating solution rows (solutions hub) — */
+.solution-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(28px, 5vw, 56px);
+  align-items: center;
+  padding: clamp(32px, 5vw, 52px) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+.solution-row:last-child { border-bottom: none; }
+.solution-row .solution-visual { display: flex; align-items: center; justify-content: center; }
+.solution-row.reverse .solution-visual { order: 2; }
+
 /* — illustrated device/screen mockups (no photography, nothing brand-specific) — */
 .mockup {
   border-radius: 10px;
