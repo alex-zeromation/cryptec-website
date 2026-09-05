@@ -4,10 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smart Building Interfaces — Cryptec Solutions</title>
-<meta name="description" content="Bespoke touch panels and interactive displays for intercom, climate, metering, booking and guest services — one of Cryptec's four solutions.">
+<meta name="description" content="Bespoke touch panels and interactive displays for intercom, climate, metering, booking and guest services.">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+
+<svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden;">
+  <defs>
+    <symbol id="i-climate" viewBox="0 0 24 24"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.5" y1="7.5" x2="19.5" y2="16.5"/><line x1="19.5" y1="7.5" x2="4.5" y2="16.5"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
+    <symbol id="i-water" viewBox="0 0 24 24"><path d="M12 3c-3.5 4.5-6 8-6 11a6 6 0 0012 0c0-3-2.5-6.5-6-11z"/></symbol>
+    <symbol id="i-concierge" viewBox="0 0 24 24"><path d="M6 16v-4a6 6 0 1112 0v4l1.5 2h-15z"/><path d="M10 20a2 2 0 004 0"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="1.5"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.8.6-1.5 1.1-1.5 2.2"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><path d="M12 12c0-3 1.5-5 4-5s3 2 1 4-4 1-5 1z"/><path d="M12 12c-3 0-5-1.5-5-4s2-3 4-1 1 4 1 5z"/><path d="M12 12c0 3-1.5 5-4 5s-3-2-1-4 4-1 5-1z"/></symbol>
+    <symbol id="i-dnd" viewBox="0 0 24 24"><path d="M15 4a8 8 0 100 16 8 8 0 01-8-8 8 8 0 018-8z"/></symbol>
+    <symbol id="i-housekeeping" viewBox="0 0 24 24"><path d="M4 18v-7a2 2 0 012-2h4a2 2 0 012 2v1h4a2 2 0 012 2v4"/><path d="M4 18h16"/><circle cx="7" cy="10.5" r="1.2"/></symbol>
+    <symbol id="i-intercom" viewBox="0 0 24 24"><path d="M6 4h3l1.5 4-2 1.5a12 12 0 006 6l1.5-2 4 1.5v3a2 2 0 01-2 2A16 16 0 014 6a2 2 0 012-2z"/></symbol>
+  </defs>
+</svg>
 
 <div class="wrap">
   <header class="site-header">
@@ -27,7 +42,7 @@
           <ul class="dropdown-menu">
             <li><a href="it-support.html">IT Support<span class="item-desc">Helpdesk, infrastructure &amp; on-site support</span></a></li>
             <li><a href="communications-networks.html">Integrated Communications Networks<span class="item-desc">Cabling, wireless, VoIP &amp; building networks</span></a></li>
-            <li><a href="custom-software.html">Custom Software Solutions<span class="item-desc">Firmware, integrations &amp; fleet tooling</span></a></li>
+            <li><a href="custom-software.html">Custom Software Solutions<span class="item-desc">Concierge, lighting &amp; building software</span></a></li>
             <li><a href="smart-building-interfaces.html" aria-current="page">Smart Building Interfaces<span class="item-desc">Touch panels &amp; interactive displays</span></a></li>
           </ul>
         </details>
@@ -41,17 +56,37 @@
   <header class="page-header">
     <div class="kicker">Smart Building Interfaces</div>
     <h1>Bespoke touch panels for the buildings people live and work in.</h1>
-    <p>One of four ways we support a building — a wall panel written for the systems already installed and completely modifiable to your spec: your systems, your branding, your wording. Two panel sizes cover almost every position in a building.</p>
+    <p>A wall panel written for the systems already installed and completely modifiable to your spec: your systems, your branding, your wording. Two panel sizes cover almost every position in a building.</p>
   </header>
 
   <section class="grid grid-2">
     <figure class="figure">
-      <img src="../assets/img/apartment-interface.png" alt="Apartment home screen with climate, power, water, weather, news and concierge controls" loading="lazy">
-      <figcaption>Apartment · home screen</figcaption>
+      <div class="mockup" aria-hidden="true">
+        <div class="mockup-bar"><span>Residential unit</span><span>9:41</span></div>
+        <div class="mockup-screen">
+          <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
+          <div class="mockup-tile"><svg><use href="#i-power"></use></svg>Power</div>
+          <div class="mockup-tile"><svg><use href="#i-water"></use></svg>Water</div>
+          <div class="mockup-tile"><svg><use href="#i-concierge"></use></svg>Concierge</div>
+          <div class="mockup-tile"><svg><use href="#i-news"></use></svg>News</div>
+          <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
+        </div>
+      </div>
+      <figcaption>Apartment · home screen (illustrative)</figcaption>
     </figure>
     <figure class="figure">
-      <img src="../assets/img/hotel-interface.png" alt="Hotel guest room screen with climate setpoint, fan speed, concierge call and do not disturb" loading="lazy">
-      <figcaption>Hotel · guest room screen</figcaption>
+      <div class="mockup" aria-hidden="true">
+        <div class="mockup-bar"><span>Guest room</span><span>9:41</span></div>
+        <div class="mockup-screen">
+          <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
+          <div class="mockup-tile"><svg><use href="#i-fan"></use></svg>Fan speed</div>
+          <div class="mockup-tile"><svg><use href="#i-dnd"></use></svg>Do not disturb</div>
+          <div class="mockup-tile"><svg><use href="#i-housekeeping"></use></svg>Housekeeping</div>
+          <div class="mockup-tile"><svg><use href="#i-concierge"></use></svg>Concierge</div>
+          <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
+        </div>
+      </div>
+      <figcaption>Hotel · guest room screen (illustrative)</figcaption>
     </figure>
   </section>
 
@@ -73,37 +108,61 @@
     </div>
   </section>
 
-  <section class="grid grid-2">
-    <div style="display:flex; flex-direction:column; gap:14px;">
-      <div style="display:flex; align-items:baseline; gap:10px;">
-        <h2 style="font-size: 28px;">CT-7</h2>
-        <span style="font-size: 14px; color: var(--color-neutral-600);">7 inch panel</span>
+  <section>
+    <div class="kicker" style="color: var(--color-neutral-600); margin-bottom: 16px;">Two sizes, one platform</div>
+    <div class="grid grid-2">
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:baseline; gap:10px;">
+          <h2 style="font-size: 28px;">CT-7</h2>
+          <span style="font-size: 14px; color: var(--color-neutral-600);">7 inch panel</span>
+        </div>
+        <div style="background:#f0efef; padding:28px; display:flex; align-items:center; justify-content:center;">
+          <div class="bezel">
+            <div class="mockup" style="width: 230px;">
+              <div class="mockup-bar"><span>Panel app</span><span>9:41</span></div>
+              <div class="mockup-screen cols-2">
+                <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
+                <div class="mockup-tile"><svg><use href="#i-power"></use></svg>Power</div>
+                <div class="mockup-tile"><svg><use href="#i-water"></use></svg>Water</div>
+                <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <div class="spec-row"><span class="spec-label">Display</span><span>7″ IPS capacitive touch, 1024 × 600</span></div>
+          <div class="spec-row"><span class="spec-label">Power</span><span>PoE only — IEEE 802.3af, one Cat6 drop</span></div>
+          <div class="spec-row"><span class="spec-label">Network</span><span>RJ45 Ethernet, Wi-Fi</span></div>
+          <div class="spec-row"><span class="spec-label">Best for</span><span>In-room and in-apartment control, guest room panels</span></div>
+        </div>
       </div>
-      <div style="background:#fff; padding:14px; display:grid; grid-template-columns:1.4fr 1fr; gap:10px;">
-        <img src="../assets/img/panel-small-front.webp" alt="CT-7 seven-inch panel, front view" style="width:100%; height:120px; object-fit:contain;" loading="lazy">
-        <img src="../assets/img/panel-small-mount.webp" alt="CT-7 shown with its wall-mount bracket" style="width:100%; height:120px; object-fit:contain;" loading="lazy">
-      </div>
-      <div style="display:flex; flex-direction:column; gap:4px;">
-        <div class="spec-row"><span class="spec-label">Display</span><span>7″ IPS capacitive touch, 1024 × 600</span></div>
-        <div class="spec-row"><span class="spec-label">Power</span><span>PoE only — IEEE 802.3af, one Cat6 drop</span></div>
-        <div class="spec-row"><span class="spec-label">Network</span><span>RJ45 Ethernet, Wi-Fi</span></div>
-        <div class="spec-row"><span class="spec-label">Best for</span><span>In-room and in-apartment control, guest room panels</span></div>
-      </div>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:14px;">
-      <div style="display:flex; align-items:baseline; gap:10px;">
-        <h2 style="font-size: 28px;">CT-10</h2>
-        <span style="font-size: 14px; color: var(--color-neutral-600);">10.1 inch panel</span>
-      </div>
-      <div style="background:#fff; padding:14px; display:grid; grid-template-columns:1.4fr 1fr; gap:10px;">
-        <img src="../assets/img/panel-large-front.webp" alt="CT-10 ten-inch panel with camera, front view" style="width:100%; height:120px; object-fit:contain;" loading="lazy">
-        <img src="../assets/img/panel-large-side.webp" alt="CT-10 side profile showing its shallow depth" style="width:100%; height:120px; object-fit:contain;" loading="lazy">
-      </div>
-      <div style="display:flex; flex-direction:column; gap:4px;">
-        <div class="spec-row"><span class="spec-label">Display</span><span>10.1″ IPS capacitive touch, 1280 × 800</span></div>
-        <div class="spec-row"><span class="spec-label">Power</span><span>PoE only — IEEE 802.3af Class 3, one Cat6 drop</span></div>
-        <div class="spec-row"><span class="spec-label">Intercom</span><span>Front camera and dual microphone for SIP video</span></div>
-        <div class="spec-row"><span class="spec-label">Best for</span><span>Entry panels, lobby and door displays, dashboards</span></div>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div style="display:flex; align-items:baseline; gap:10px;">
+          <h2 style="font-size: 28px;">CT-10</h2>
+          <span style="font-size: 14px; color: var(--color-neutral-600);">10.1 inch panel</span>
+        </div>
+        <div style="background:#f0efef; padding:28px; display:flex; align-items:center; justify-content:center;">
+          <div class="bezel">
+            <div class="bezel-cam" title="Front camera"></div>
+            <div class="mockup" style="width: 290px;">
+              <div class="mockup-bar"><span>Panel app</span><span>9:41</span></div>
+              <div class="mockup-screen">
+                <div class="mockup-tile"><svg><use href="#i-intercom"></use></svg>Intercom</div>
+                <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
+                <div class="mockup-tile"><svg><use href="#i-power"></use></svg>Power</div>
+                <div class="mockup-tile"><svg><use href="#i-water"></use></svg>Water</div>
+                <div class="mockup-tile"><svg><use href="#i-concierge"></use></svg>Concierge</div>
+                <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <div class="spec-row"><span class="spec-label">Display</span><span>10.1″ IPS capacitive touch, 1280 × 800</span></div>
+          <div class="spec-row"><span class="spec-label">Power</span><span>PoE only — IEEE 802.3af Class 3, one Cat6 drop</span></div>
+          <div class="spec-row"><span class="spec-label">Intercom</span><span>Front camera and dual microphone for SIP video</span></div>
+          <div class="spec-row"><span class="spec-label">Best for</span><span>Entry panels, lobby and door displays, dashboards</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -118,16 +177,6 @@
       <div><h3 style="font-size: 19px; margin-bottom: 6px;">Metering &amp; cost</h3><p class="text-muted" style="font-size: 15px;">Electricity, hot and cold water shown daily to yearly with tariff cost and CO₂ against each period.</p></div>
       <div><h3 style="font-size: 19px; margin-bottom: 6px;">Cloud services</h3><p class="text-muted" style="font-size: 15px;">Weather forecast on the home screen, local news, building notices, amenity booking and any REST API you already run.</p></div>
       <div><h3 style="font-size: 19px; margin-bottom: 6px;">Monitored &amp; maintained</h3><p class="text-muted" style="font-size: 15px;">Each panel self-checks every connection it depends on and reports back, with remote update across the fleet.</p></div>
-    </div>
-  </section>
-
-  <section style="display:flex; flex-direction:column; gap:14px;">
-    <div class="kicker" style="color: var(--color-neutral-600);">The interface, as built</div>
-    <div class="grid grid-4">
-      <figure class="figure"><img src="../assets/img/incoming-call.png" alt="Incoming intercom call from the front entrance" loading="lazy"><figcaption>SIP video intercom</figcaption></figure>
-      <figure class="figure"><img src="../assets/img/climate-control.png" alt="Climate control screen with fan speed, setpoint and schedule" loading="lazy"><figcaption>Climate, over BACnet</figcaption></figure>
-      <figure class="figure"><img src="../assets/img/electricity-usage.png" alt="Daily electricity usage with kWh, CO2 and cost" loading="lazy"><figcaption>Metering and cost</figcaption></figure>
-      <figure class="figure"><img src="../assets/img/health-check.png" alt="System health screen listing SIP, EMS, BACnet and internet connection status" loading="lazy"><figcaption>Connection health</figcaption></figure>
     </div>
   </section>
 

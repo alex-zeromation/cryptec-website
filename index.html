@@ -9,6 +9,17 @@
 </head>
 <body>
 
+<svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden;">
+  <defs>
+    <symbol id="i-climate" viewBox="0 0 24 24"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.5" y1="7.5" x2="19.5" y2="16.5"/><line x1="19.5" y1="7.5" x2="4.5" y2="16.5"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
+    <symbol id="i-water" viewBox="0 0 24 24"><path d="M12 3c-3.5 4.5-6 8-6 11a6 6 0 0012 0c0-3-2.5-6.5-6-11z"/></symbol>
+    <symbol id="i-concierge" viewBox="0 0 24 24"><path d="M6 16v-4a6 6 0 1112 0v4l1.5 2h-15z"/><path d="M10 20a2 2 0 004 0"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="1.5"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.8.6-1.5 1.1-1.5 2.2"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
 <div class="wrap">
   <header class="site-header">
     <nav class="nav">
@@ -27,7 +38,7 @@
           <ul class="dropdown-menu">
             <li><a href="solutions/it-support.html">IT Support<span class="item-desc">Helpdesk, infrastructure &amp; on-site support</span></a></li>
             <li><a href="solutions/communications-networks.html">Integrated Communications Networks<span class="item-desc">Cabling, wireless, VoIP &amp; building networks</span></a></li>
-            <li><a href="solutions/custom-software.html">Custom Software Solutions<span class="item-desc">Firmware, integrations &amp; fleet tooling</span></a></li>
+            <li><a href="solutions/custom-software.html">Custom Software Solutions<span class="item-desc">Concierge, lighting &amp; building software</span></a></li>
             <li><a href="solutions/smart-building-interfaces.html">Smart Building Interfaces<span class="item-desc">Touch panels &amp; interactive displays</span></a></li>
           </ul>
         </details>
@@ -49,7 +60,7 @@
   </section>
 
   <section id="solutions">
-    <h2 style="font-size: clamp(24px, 3vw, 32px); margin-bottom: 8px;">Four ways we help.</h2>
+    <h2 style="font-size: clamp(24px, 3vw, 32px); margin-bottom: 8px;">How we help.</h2>
     <p class="text-muted" style="max-width: 60ch; margin-bottom: clamp(24px, 4vw, 40px);">Every engagement starts from what your building already has and what it needs next — supplied alone, consulted on, or delivered end to end.</p>
     <div class="grid grid-4">
       <div class="solution-card">
@@ -67,7 +78,7 @@
       <div class="solution-card">
         <div class="accent-bar"></div>
         <h3>Custom Software Solutions</h3>
-        <p>Embedded firmware, protocol integrations and fleet tooling written for your systems, not around them.</p>
+        <p>Concierge, lighting and building management software written around how your property runs, not a fixed product menu.</p>
         <a href="solutions/custom-software.html">Learn more →</a>
       </div>
       <div class="solution-card">
@@ -89,7 +100,17 @@
         <div><div class="stat-num">99.95%</div><div class="stat-label">fleet uptime</div></div>
       </div>
     </div>
-    <img src="assets/img/apartment-interface.png" alt="Apartment home screen showing climate, power, water, weather and concierge controls" loading="lazy">
+    <div class="mockup" aria-hidden="true">
+      <div class="mockup-bar"><span>Residential unit</span><span>9:41</span></div>
+      <div class="mockup-screen">
+        <div class="mockup-tile"><svg><use href="#i-climate"></use></svg>Climate</div>
+        <div class="mockup-tile"><svg><use href="#i-power"></use></svg>Power</div>
+        <div class="mockup-tile"><svg><use href="#i-water"></use></svg>Water</div>
+        <div class="mockup-tile"><svg><use href="#i-concierge"></use></svg>Concierge</div>
+        <div class="mockup-tile"><svg><use href="#i-news"></use></svg>News</div>
+        <div class="mockup-tile"><svg><use href="#i-help"></use></svg>Help</div>
+      </div>
+    </div>
   </section>
 
   <section class="cta-banner">
